@@ -1,0 +1,6 @@
+function [modeblue]=modeblue(a,count)
+    modeblue=zeros(size(a(:,:,1)));
+    switch count
+        case 
+        modeblue=(a(:,:,1)>150).*(a(:,:,2)>150).*(a(:,:,3)<100);
+end
